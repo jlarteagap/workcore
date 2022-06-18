@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BugerMenu } from './BugerMenu'
 import './header.css'
 import { Menu } from './Menu'
 
 export default function Header() {
+  const [open, setOpen] = useState(false)
+
   return (
     <div className="header">
       <div className="container">
@@ -16,14 +18,20 @@ export default function Header() {
                 height="28"
               />
             </a>
-            <BugerMenu />
+            <BugerMenu
+              open={open}
+              onClick={() => {
+                setOpen(!open)
+              }}
+            />
           </div>
 
-          <div className="navbar-menu">
-            <div className="navbar-end">
-              <Menu />
-            </div>
-          </div>
+          <Menu
+            open={open}
+            onClick={() => {
+              setOpen(!open)
+            }}
+          />
         </nav>
       </div>
     </div>

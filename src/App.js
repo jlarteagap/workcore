@@ -1,9 +1,10 @@
 import React from 'react'
-import { Header } from './components'
+import { Header, Home } from './components'
 function App() {
   return (
     <div className="">
       <Header />
+      <Home />
     </div>
   )
 }

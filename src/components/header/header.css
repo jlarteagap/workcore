@@ -42,3 +42,9 @@
     border: none;
     outline: none;
 }
+
+@media screen and (max-width: 468px){
+    .header__menu-item::after{
+        display: none !important;
+    }
+}
