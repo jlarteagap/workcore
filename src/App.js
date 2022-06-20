@@ -1,10 +1,13 @@
 import React from 'react'
 import { Header, Home } from './components'
+import { AppProvider } from './context/AppContext'
 function App() {
   return (
     <div className="">
-      <Header />
-      <Home />
+      <AppProvider>
+        <Header />
+        <Home />
+      </AppProvider>
     </div>
   )
 }
