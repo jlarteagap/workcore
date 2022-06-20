@@ -10,7 +10,7 @@ const options = {
   arrows: false,
   rewind: true,
   pagination: false,
-  interval: 3000,
+  interval: 6000,
   autoplay: true
 }
 export const Slide = () => {

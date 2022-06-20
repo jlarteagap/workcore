@@ -7,7 +7,7 @@ export const AppContext = createContext({
 })
 
 export function AppProvider({ children }) {
-  const [empresa, setEmpresa] = useState(null)
+  const [empresa, setEmpresa] = useState([])
 
   useEffect(() => {
     const url = `${API_HOST}/empresa/?a=${A}&e=${E}&ub=${UB}`
