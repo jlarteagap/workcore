@@ -1,12 +1,14 @@
 import React from 'react'
-import { Footer, Header, Home } from './components'
+import { Contact, Footer, Header, Home } from './components'
 import { AppProvider } from './context/AppContext'
+
 function App() {
   return (
     <div className="">
       <AppProvider>
         <Header />
         <Home />
+        <Contact />
         <Footer />
       </AppProvider>
     </div>

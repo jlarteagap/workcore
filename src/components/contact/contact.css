@@ -1,0 +1,38 @@
+.contacto{
+    padding: 5rem 1rem;
+}
+
+.contact__icons{
+    border-radius: 5px;
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--primary);
+    color: white;
+    transition: all .4s
+}
+.contact__address{
+    padding: 5rem 0;
+}
+.contact__address-data{
+    max-width: 300px;
+    width: 300px;
+}
+.contact__icons:hover{
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transform: scale(1.025);
+}
+
+.contact__form-title--text{
+    letter-spacing: .25rem;
+}
+@media only screen and (max-width: 600px) {
+    .contact__address{
+        flex-direction: column;
+    }
+    .contact__address-data{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+  }

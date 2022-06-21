@@ -4,3 +4,25 @@
     --text-menu: #39474b;
     --bgDark: #10151b;
 }
+
+.wc__titles {
+    position: relative;
+    border-left: 1px solid var(--primary);
+    border-right: 1px solid var(--primary);
+    padding: 0 1.5rem;
+    letter-spacing: .25rem;
+}
+.wc__titles:before {
+    left: -2rem;
+}
+.wc__titles:after {
+    right: -2rem;
+}
+.wc__titles:before, .wc__titles:after {
+    content: "";
+    height: 1px;
+    width: 2rem;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+}

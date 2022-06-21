@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import { BugerMenu } from './BugerMenu'
 import './header.css'
 import { Menu } from './Menu'
+import useData from '../../hooks/useData'
 
 export default function Header() {
+  const { empresa } = useData()
   const [open, setOpen] = useState(false)
 
   return (
@@ -11,12 +13,8 @@ export default function Header() {
       <div className="container">
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="navbar-item" href="https://bulma.io">
-              <img
-                src="https://bulma.io/images/bulma-logo.png"
-                width="112"
-                height="28"
-              />
+            <a className="navbar-item" href={empresa.url}>
+              <img src={empresa.logo} width="112" alt={empresa.nombre} />
             </a>
             <BugerMenu
               open={open}
