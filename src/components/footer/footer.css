@@ -49,6 +49,10 @@
         border-top: none;
     }
     .footer__brand-logo{
-        border-right: none
+        border-right: none;
+        justify-content: center;
+    }
+    .footer__brand-social{
+        justify-content: center;
     }
   }

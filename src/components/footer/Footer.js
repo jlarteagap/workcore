@@ -16,7 +16,7 @@ export default function Footer() {
           <HiChevronDoubleUp size={36} className="upButtons" />
         </div>
         <div className="footer__brand is-flex is-align-items-center">
-          <div className="footer__brand-logo py-4 pr-4 is-flex is-justify-content-end">
+          <div className="footer__brand-logo py-4 pr-4 is-flex">
             <img src={empresa.logo} alt={empresa.nombre} />
           </div>
           <div className="footer__brand-social-content pl-4">

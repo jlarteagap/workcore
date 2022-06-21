@@ -25,7 +25,7 @@ export const ContactForm = () => {
     <>
       <div>
         <div className="is-flex is-justify-content-center mb-5">
-          <h2 className="contact__form-title--text is-size-3">
+          <h2 className="contact__form-title--text is-size-3 is-size-6-mobile has-text-centered ">
             DEJA TUS DATOS
           </h2>
         </div>
