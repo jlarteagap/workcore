@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact, Footer, Header, Home } from './components'
+import { Contact, Footer, Header, Home, OtherData } from './components'
 import { AppProvider } from './context/AppContext'
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <AppProvider>
         <Header />
         <Home />
+        <OtherData />
         <Contact />
         <Footer />
       </AppProvider>

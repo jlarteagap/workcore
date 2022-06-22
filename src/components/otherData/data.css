@@ -1,0 +1,35 @@
+.data{
+    background: url('../../assets/datos_curiosos.png') no-repeat center center / cover;
+    padding: 3rem 1rem;
+}
+
+.data__header .wc__titles{
+    border-color: white;
+}
+.data__header .wc__titles::before, .data__header .wc__titles::after{
+    background-color: white;
+}
+
+.data__body-item{
+    max-width: 100px;
+}
+.data__body-item-icom{
+    width: 80px;
+    height: 80px;
+}
+.data__body-item-icom img{
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .data__header-title{
+        max-width: 80%;
+    }
+    .data__body{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .data__body-item:nth-child(2){
+        margin: 2rem 0;
+    }
+}

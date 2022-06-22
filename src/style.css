@@ -4,6 +4,10 @@
     --text-menu: #39474b;
     --bgDark: #10151b;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 
 .wc__titles {
     position: relative;
@@ -11,6 +15,7 @@
     border-right: 1px solid var(--primary);
     padding: 0 1.5rem;
     letter-spacing: .25rem;
+    line-height: 1;
 }
 .wc__titles:before {
     left: -2rem;
