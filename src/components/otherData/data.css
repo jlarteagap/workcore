@@ -9,7 +9,9 @@
 .data__header .wc__titles::before, .data__header .wc__titles::after{
     background-color: white;
 }
-
+.data__body{
+    max-width: 800px;
+}
 .data__body-item{
     max-width: 100px;
 }
@@ -26,7 +28,8 @@
         max-width: 80%;
     }
     .data__body{
-        justify-content: center;
+        align-items: center;
+        max-width: 100%;
         flex-direction: column;
     }
     .data__body-item:nth-child(2){

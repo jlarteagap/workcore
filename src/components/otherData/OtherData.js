@@ -13,7 +13,7 @@ export default function OtherData() {
             ALGUNOS DATOS CURIOSOS
           </h2>
         </div>
-        <div className="data__body has-text-light is-flex is-justify-content-space-around">
+        <div className="data__body has-text-light is-flex is-justify-content-space-between m-auto">
           <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
             <div className="data__body-item-title has-text-weight-light is-size-3">
               Módulos
