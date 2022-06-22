@@ -1,4 +1,5 @@
 import React from 'react'
+import CountUp from 'react-countup'
 import './data.css'
 import data1 from '../../assets/datos_curiosos/icono_modulos-01.png'
 import data2 from '../../assets/datos_curiosos/icono_cliente-02.png'
@@ -22,7 +23,7 @@ export default function OtherData() {
               <img src={data1} alt="Módulos" />
             </div>
             <div className="data__body-item-num has-text-weight-bold is-size-3">
-              219+
+              <CountUp delay={1} duration={3} end={100} suffix="+" />
             </div>
           </div>
           <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -33,7 +34,7 @@ export default function OtherData() {
               <img src={data2} alt="Módulos" />
             </div>
             <div className="data__body-item-num has-text-weight-bold is-size-3">
-              219+
+              <CountUp delay={1} duration={3} end={100} suffix="+" />
             </div>
           </div>
           <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -44,7 +45,7 @@ export default function OtherData() {
               <img src={data3} alt="Módulos" />
             </div>
             <div className="data__body-item-num has-text-weight-bold is-size-3">
-              219+
+              <CountUp delay={1} duration={3} end={100} suffix="+" />
             </div>
           </div>
         </div>
