@@ -16,35 +16,35 @@ export default function OtherData() {
         </div>
         <div className="data__body has-text-light is-flex is-justify-content-space-between m-auto">
           <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
-            <div className="data__body-item-title has-text-weight-light is-size-3">
+            <div className="data__body-item-title has-text-weight-light is-size-3 is-size-4-mobile">
               Módulos
             </div>
-            <div className="data__body-item-icom">
+            <div className="data__body-item-icom my-3">
               <img src={data1} alt="Módulos" />
             </div>
-            <div className="data__body-item-num has-text-weight-bold is-size-3">
+            <div className="data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile">
               <CountUp delay={1} duration={3} end={100} suffix="+" />
             </div>
           </div>
           <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
-            <div className="data__body-item-title has-text-weight-light is-size-3">
-              Módulos
+            <div className="data__body-item-title has-text-weight-light is-size-3 is-size-4-mobile">
+              Clientes
             </div>
-            <div className="data__body-item-icom">
+            <div className="data__body-item-icom my-3">
               <img src={data2} alt="Módulos" />
             </div>
-            <div className="data__body-item-num has-text-weight-bold is-size-3">
+            <div className="data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile">
               <CountUp delay={1} duration={3} end={100} suffix="+" />
             </div>
           </div>
           <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
-            <div className="data__body-item-title has-text-weight-light is-size-3">
-              Módulos
+            <div className="data__body-item-title has-text-weight-light is-size-3 is-size-4-mobile">
+              Implementación
             </div>
-            <div className="data__body-item-icom">
+            <div className="data__body-item-icom my-3">
               <img src={data3} alt="Módulos" />
             </div>
-            <div className="data__body-item-num has-text-weight-bold is-size-3">
+            <div className="data__body-item-num has-text-weight-bold is-size-3  is-size-5-mobile">
               <CountUp delay={1} duration={3} end={100} suffix="+" />
             </div>
           </div>
