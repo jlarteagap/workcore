@@ -31,3 +31,29 @@ body{
     position: absolute;
     top: 50%;
 }
+
+.collapse-button {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    transition: all .3s;
+    width: 100%;
+  }
+.collapse-button:hover{
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+.collapse-content{
+    border-radius: 0 0;
+}
+.collapse-content.collapsed {
+    display: none;
+}  
+.collapsed-content.expanded {
+    display: block;
+}
