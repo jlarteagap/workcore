@@ -32,6 +32,56 @@ body{
     top: 50%;
 }
 
+.wc__titles-white{
+    border-color: white;
+}
+.wc__titles-white::before, .wc__titles-white::after{
+    background-color: white;
+}
+
+.banner{
+    padding: 4rem 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-blend-mode: multiply;
+}
+
+.banner__header-title{
+    text-transform: uppercase;
+}
+.banner__body{
+    max-width: 800px;
+}
+
+.quote__data-logo{
+    border-top: 2px solid var(--primary)
+}
+.data__body-item{
+    max-width: 100px;
+}
+.data__body-item-icom{
+    width: 80px;
+    height: 80px;
+}
+.data__body-item-icom img{
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .data__header-title{
+        max-width: 80%;
+    }
+    .data__body{
+        align-items: center;
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .data__body-item:nth-child(2){
+        margin: 2rem 0;
+    }
+}
 .collapse-button {
     background: var(--primary);
     border: 1px solid var(--primary);

@@ -1,6 +1,16 @@
 import React from 'react'
-import { About, Contact, Footer, Header, Home, OtherData } from './components'
+import { About, Contact, Footer, Header, Home } from './components'
+import {
+  OtherData,
+  QuoteData,
+  QuoteAdapt
+} from './components/utils/banner/InnerBanners'
+import { Banner } from './components/utils/Banner'
 import { AppProvider } from './context/AppContext'
+
+import data from './assets/data.png'
+import quote from './assets/process.jpg'
+import adapt from './assets/adapt.png'
 
 function App() {
   return (
@@ -8,8 +18,22 @@ function App() {
       <AppProvider>
         <Header />
         <Home />
+        <Banner bg={adapt} overlay="transparent">
+          <QuoteAdapt />
+        </Banner>
+        <Banner white bg={quote} overlay="#414141">
+          <QuoteData />
+        </Banner>
         <About />
-        <OtherData />
+        <Banner
+          title="Algunos datos curiosos"
+          white
+          bg={data}
+          overlay="#0c3e88"
+        >
+          <OtherData />
+        </Banner>
+
         <Contact />
         <Footer />
       </AppProvider>
