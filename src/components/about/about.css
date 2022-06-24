@@ -38,8 +38,4 @@
     .modelo__icons-items:last-child:nth-child(3n - 2),  .modelo__icons-items:nth-last-child(2) {
         grid-column: span 1;
       }
-
-    .about__header-title{
-        max-width: 80%;
-    }
 }

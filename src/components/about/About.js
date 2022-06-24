@@ -3,15 +3,12 @@ import './about.css'
 import { Collapse } from './Collapse'
 import about from '../../assets/about.jpg'
 import { Modelo } from './Modelo'
+import { Titles } from '../utils/Titles'
 export default function About() {
   return (
     <section className="about">
       <div className="container">
-        <div className="about__header is-flex is-justify-content-center has-text-centered">
-          <h2 className="about__header-title wc__titles is-size-3 is-size-6-mobile has-text-weight-light">
-            ACERCA DE NOSOTROS
-          </h2>
-        </div>
+        <Titles title="Acerca de Workcore" />
         <div className="about__body">
           <div className="columns">
             <div className="about__img column">

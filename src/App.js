@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, Contact, Footer, Header, Home } from './components'
+import { About, Contact, Footer, Header, Home, Application } from './components'
 import {
   OtherData,
   QuoteData,
@@ -21,6 +21,7 @@ function App() {
         <Banner bg={adapt} overlay="transparent">
           <QuoteAdapt />
         </Banner>
+        <Application />
         <Banner white bg={quote} overlay="#414141">
           <QuoteData />
         </Banner>

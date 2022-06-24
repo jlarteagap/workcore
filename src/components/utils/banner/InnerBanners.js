@@ -8,7 +8,7 @@ import { FaQuoteLeft } from 'react-icons/fa'
 
 export const OtherData = () => {
   return (
-    <div className="has-text-light is-flex is-justify-content-space-between">
+    <div className="other__data has-text-light is-flex is-justify-content-space-between">
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
         <div className="data__body-item-title has-text-weight-light is-size-3 is-size-4-mobile">
           Módulos
