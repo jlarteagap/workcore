@@ -20,6 +20,27 @@
     text-transform: uppercase;
 }
 
+.skills__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+.skills-items{
+    background: #f3f3f3;
+    border-radius: .5rem;
+    width: 200px;
+    height: 200px;
+    transition: all .3;
+    text-transform: uppercase;
+    line-height: 1;
+
+}
+.skills-items:hover{
+    background-color: var(--primary);
+    color: #f3f3f3;
+}
 @media screen and (max-width: 480px) {
     .app__services{
         grid-template-columns: repeat(2, 1fr);
