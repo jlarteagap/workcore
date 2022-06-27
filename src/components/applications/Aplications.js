@@ -14,7 +14,7 @@ export default function Application() {
       {/* Skills */}
 
       <div className="skills">
-        <div className="skills__header is-flex is-align-items-center is-flex-direction-column">
+        <div className="skills__header is-flex is-align-items-center is-flex-direction-column has-text-centered">
           <div className="skills__header-title has-text-weight-light is-size-3 is-size-5-mobile">
             NUESTRAS HABILIDADES
           </div>
