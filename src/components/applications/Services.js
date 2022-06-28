@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react'
 import { getData } from '../../api/Api'
-const style = {
-  BackgroundColor: '#fff000',
-  ObjectFit: 'contain',
-  Height: '48px',
-  Width: '100%'
-}
+import './applications.css'
+
 export const Services = () => {
   const [services, setServices] = React.useState([])
   useEffect(() => {
@@ -19,22 +15,20 @@ export const Services = () => {
     })()
   }, [])
 
-  console.log(services)
   return (
     <div className="app__services">
       {services.map((service, index) => {
         return (
           <div className="app__services-item has-text-centered" key={index}>
             <div className="mb-3">
-              <div className="app__service-icon">
-                <img
-                  src={service.FOTO}
-                  alt={service.NOMBRE}
-                  loading="lazy"
-                  style={{ style }}
-                />
-              </div>
+              <img
+                className="app__services-icon has-text-centered"
+                src={service.FOTO}
+                alt={service.NOMBRE}
+                loading="lazy"
+              />
             </div>
+
             <h4 className="app__services-title has-text-weight-bold mb-4">
               {service.NOMBRE}
             </h4>

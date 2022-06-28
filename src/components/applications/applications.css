@@ -16,16 +16,18 @@
 .app__services-item:hover{
     border-bottom: 1px solid var(--primary);
 }
-.app__services-title {
-    text-transform: uppercase;
-}
 
 .app__services-icon{
-    background-color: aqua;
     object-fit: contain;
     width: 56px;
     height: 56px;
 }
+
+.app__services-title {
+    text-transform: uppercase;
+}
+
+
 .skills__content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
