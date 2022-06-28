@@ -1,6 +1,6 @@
 window.CONFIG = {
   API_HOST: 'https://workcore.net/apiv2/web',
-  A: '2',
-  E: '64',
+  A: '3284',
+  E: '38',
   UB: 'https://workcore.net/'
 }

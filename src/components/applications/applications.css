@@ -20,6 +20,12 @@
     text-transform: uppercase;
 }
 
+.app__services-icon{
+    background-color: aqua;
+    object-fit: contain;
+    width: 56px;
+    height: 56px;
+}
 .skills__content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
