@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-
+import workcore from '../../assets/workcore_blanco.png'
 import { HiChevronDoubleUp } from 'react-icons/hi'
 import { Social } from '../utils/SocialIcons'
 import useData from '../../hooks/useData'
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
         <div className="footer__brand is-flex is-align-items-center">
           <div className="footer__brand-logo py-4 pr-4 is-flex">
-            <img src={empresa.logo} alt={empresa.nombre} />
+            <img src={workcore} alt={empresa.nombre} />
           </div>
           <div className="footer__brand-social-content pl-4">
             <Social />

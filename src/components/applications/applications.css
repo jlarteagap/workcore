@@ -23,6 +23,9 @@
     height: 56px;
 }
 
+.app__services-content :not(:first-child) {
+    display: none;
+}
 .app__services-title {
     text-transform: uppercase;
 }

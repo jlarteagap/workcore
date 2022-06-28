@@ -21,7 +21,9 @@
     width: 80%;
     opacity: 1;
 }
-
+.header__logo img{
+    max-height: inherit !important;
+}
 .header__menu-item:not(:last-child):after{
     color: var(--text-menu);
     content: '/';

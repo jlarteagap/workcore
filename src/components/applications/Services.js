@@ -33,7 +33,10 @@ export const Services = () => {
               {service.NOMBRE}
             </h4>
             <div className="is-size-7 has-text-weight-light">
-              <div dangerouslySetInnerHTML={{ __html: service.CONTENIDO }} />
+              <div
+                className="app__services-content"
+                dangerouslySetInnerHTML={{ __html: service.CONTENIDO }}
+              />
             </div>
           </div>
         )
