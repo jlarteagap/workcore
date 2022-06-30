@@ -50,7 +50,7 @@
 
 }
 .skills-tooltip{
-    background: red;
+    background: #2b393d;
     color: white;
     position: absolute;
     bottom: -60px;
@@ -68,7 +68,7 @@
 	width: 0;
 	height: 0;
 	border: 10px solid transparent;
-	border-bottom-color: red;
+	border-bottom-color: #2b393d;
 	border-top: 0;
 	margin-left: -10px;
 	margin-top: -10px;
