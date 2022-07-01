@@ -91,6 +91,27 @@
     background-color: var(--primary);
     color: #f3f3f3;
 }
+
+.mac__imag{
+    position: relative;
+}
+.mac__imag_top{
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    margin-left: -400px;
+}
+.mac__imag_top img{
+    max-width: 800px;
+}
+.mac__imag-spacer{
+    height: 150px;
+    display: block;
+    margin-bottom: 3rem;
+}
+.mac__img_title{
+    max-width: 500px;
+}
 @media screen and (max-width: 480px) {
     .app__services{
         grid-template-columns: repeat(2, 1fr);
@@ -109,5 +130,16 @@
     }
     .app__services-item:last-child{
         grid-column-end: span 2;
+    }
+    .mac__imag_top{
+        position: static;
+        display: block;
+        margin-left: 0;
+    }
+    .mac__imag_top img{
+        width: 100%;
+    }
+    .mac__imag-spacer{
+        height: 1px;
     }
 } 

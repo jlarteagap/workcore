@@ -48,6 +48,7 @@ body{
     background-size: cover;
     overflow: hidden;
     background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
 .banner__header-title{

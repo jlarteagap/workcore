@@ -7,8 +7,16 @@ import laptop from '../../assets/mac.png'
 export default function Application() {
   return (
     <section className="applications">
-      <div className="">
-        <img src={laptop} alt="laptop" />
+      <div className="mac__imag">
+        <div className="mac__imag_top">
+          <img src={laptop} alt="laptop" />
+        </div>
+        <span className="mac__imag-spacer"></span>
+        <div className="mac__img_title is-flex is-justify-content-center is-align-items-center has-text-centered m-auto pb-5">
+          <h4 className="is-size-4 is-size-5-mobile">
+            sistema de planificación de recursos empresariales
+          </h4>
+        </div>
       </div>
       <div className="container">
         <Titles title="Aplicaciones" />
