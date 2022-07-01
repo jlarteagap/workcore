@@ -17,6 +17,13 @@
     border-bottom: 1px solid var(--primary);
 }
 
+.app__services-item:last-child{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 300px;
+    grid-column-end: span 4;
+}
 .app__services-icon{
     object-fit: contain;
     width: 56px;
@@ -48,6 +55,9 @@
     line-height: 1;
     position: relative;
 
+}
+.skills__header-title{
+    letter-spacing: .25rem;
 }
 .skills-tooltip{
     background: #2b393d;
@@ -97,4 +107,7 @@
     .app__services-title{
         font-size: .85rem;
     }
-}
+    .app__services-item:last-child{
+        grid-column-end: span 2;
+    }
+} 

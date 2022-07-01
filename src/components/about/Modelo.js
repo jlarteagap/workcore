@@ -5,7 +5,7 @@ export const Modelo = () => {
   return (
     <div className="modelo">
       <div className="modelo__header is-flex is-justify-content-center is-flex-direction-column has-text-centered">
-        <h3 className="is-size-3 is-size-5-mobile has-text-weight-light">
+        <h3 className="modelo__header-title is-size-2 is-size-5-mobile has-text-weight-light">
           MODELO DE NEGOCIO
         </h3>
         <span className="has-text-weight-light">

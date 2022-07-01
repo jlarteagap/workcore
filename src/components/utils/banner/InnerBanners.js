@@ -1,6 +1,7 @@
 import React from 'react'
 import CountUp from 'react-countup'
 
+import workcore from '../../../assets/workcore__blanco.png'
 import data1 from '../../../assets/datos_curiosos/icono_modulos-01.png'
 import data2 from '../../../assets/datos_curiosos/icono_cliente-02.png'
 import data3 from '../../../assets/datos_curiosos/icono_implementacion-03.png'
@@ -61,9 +62,7 @@ export const QuoteData = () => {
           Simplifica todos los procesos, de tu organización
         </div>
         <div className="is-flex is-justify-content-center">
-          <div className="quote__data-logo has-text-weight-bold has-text-light is-size-3 is-size-4-mobile px-6">
-            workcore
-          </div>
+          <img src={workcore} alt="Workcore" />
         </div>
       </div>
     </>

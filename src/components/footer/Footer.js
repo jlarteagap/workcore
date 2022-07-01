@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import workcore from '../../assets/workcore_blanco.png'
+import workcore from '../../assets/workcore__blanco.png'
 import { HiChevronDoubleUp } from 'react-icons/hi'
 import { Social } from '../utils/SocialIcons'
 import useData from '../../hooks/useData'
