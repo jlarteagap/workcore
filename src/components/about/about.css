@@ -30,7 +30,9 @@
   .modelo__icons-items:nth-last-child(2){
     grid-column: span 2;
   }
-
+.modelo__icons-item-text{
+    text-transform: uppercase;
+}
 .modelo__header-title{
     letter-spacing: .25rem;
 }

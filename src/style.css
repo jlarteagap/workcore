@@ -112,7 +112,9 @@ body{
 .collapsed-content.expanded {
     display: block;
 }
-
+.collapse__title{
+    text-transform: uppercase;
+}
 @media screen and (max-width: 480px) {
     .other__data{
         flex-direction: column;
