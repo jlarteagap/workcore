@@ -7,6 +7,8 @@ import data2 from '../../../assets/datos_curiosos/icono_cliente-02.png'
 import data3 from '../../../assets/datos_curiosos/icono_implementacion-03.png'
 import { FaQuoteLeft } from 'react-icons/fa'
 
+const { CLIENTS, MODULES, IMPLEMENT } = window.CONFIG
+
 export const OtherData = () => {
   return (
     <div className="other__data has-text-light is-flex is-justify-content-space-between">
@@ -18,7 +20,7 @@ export const OtherData = () => {
           <img src={data1} alt="Módulos" />
         </div>
         <div className="data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile">
-          <CountUp delay={1} duration={3} end={100} suffix="+" />
+          <CountUp delay={1} duration={3} end={MODULES} suffix="+" />
         </div>
       </div>
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -29,7 +31,7 @@ export const OtherData = () => {
           <img src={data2} alt="Módulos" />
         </div>
         <div className="data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile">
-          <CountUp delay={1} duration={3} end={100} suffix="+" />
+          <CountUp delay={1} duration={3} end={CLIENTS} suffix="+" />
         </div>
       </div>
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -40,7 +42,7 @@ export const OtherData = () => {
           <img src={data3} alt="Módulos" />
         </div>
         <div className="data__body-item-num has-text-weight-bold is-size-3  is-size-5-mobile">
-          <CountUp delay={1} duration={3} end={100} suffix="+" />
+          <CountUp delay={1} duration={3} end={IMPLEMENT} suffix="+" />
         </div>
       </div>
     </div>
