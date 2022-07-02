@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { FaPlus, FaTimes } from 'react-icons/fa'
+
 export const Collapse = ({ title, collapsed, children }) => {
+  console.log(collapsed)
   const [isCollapsed, setIsCollapsed] = useState(collapsed)
 
   return (
@@ -9,7 +11,9 @@ export const Collapse = ({ title, collapsed, children }) => {
         className={`collapse-button is-flex is-align-items-center is-justify-content-space-between`}
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
-        <h3 className="is-size-5 has-text-weight-bold">{title}</h3>
+        <h3 className="collapse__title is-size-6 has-text-weight-bold">
+          {title}
+        </h3>
         {isCollapsed ? <FaPlus size={24} /> : <FaTimes size={24} />}
       </button>
       <div
