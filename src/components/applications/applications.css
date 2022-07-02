@@ -24,6 +24,10 @@
     max-width: 300px;
     grid-column-end: span 4;
 }
+.app__services-img{
+    border: 1px solid var(--bgDark);
+    border-radius: .5rem;
+}
 .app__services-icon{
     object-fit: contain;
     width: 56px;
@@ -56,6 +60,11 @@
     position: relative;
 
 }
+.skills-items img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
 .skills__header-title{
     letter-spacing: .25rem;
 }
@@ -63,8 +72,9 @@
     background: #2b393d;
     color: white;
     position: absolute;
-    bottom: -60px;
+    top: calc(100% + 1rem);
     width: 100%;
+    left: calc(50% - 100px);
     border-radius: .5rem;
     visibility: hidden;
     transition: all .3s;

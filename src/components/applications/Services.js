@@ -20,13 +20,15 @@ export const Services = () => {
       {services.map((service, index) => {
         return (
           <div className="app__services-item has-text-centered" key={index}>
-            <div className="mb-3">
-              <img
-                className="app__services-icon has-text-centered"
-                src={service.FOTO}
-                alt={service.NOMBRE}
-                loading="lazy"
-              />
+            <div className="mb-3 is-flex is-justify-content-center">
+              <div className="app__services-img p-3">
+                <img
+                  className="app__services-icon has-text-centered"
+                  src={service.FOTO}
+                  alt={service.NOMBRE}
+                  loading="lazy"
+                />
+              </div>
             </div>
 
             <h4 className="app__services-title has-text-weight-bold mb-4">
