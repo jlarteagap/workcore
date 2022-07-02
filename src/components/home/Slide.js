@@ -26,7 +26,6 @@ export const Slide = () => {
     })()
   }, [])
 
-  console.log(slides)
   return (
     <Splide options={options}>
       {slides.map((slide, index) => {

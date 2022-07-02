@@ -6,13 +6,14 @@ export const Accordion = () => {
   useEffect(() => {
     ;(async () => {
       try {
-        const res = await getData('acercade')
+        const res = await getData('acercade', 'GENERAL')
         setAbout(res.records.reverse())
       } catch (error) {
         console.log(error)
       }
     })()
   }, [])
+
   return (
     <div className="column">
       {about.map((item, index) => {

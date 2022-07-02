@@ -8,7 +8,7 @@ export const Skills = () => {
   useEffect(() => {
     ;(async () => {
       try {
-        const res = await getData('servicios')
+        const res = await getData('servicios', 'NUESTRAS HABILIDADES')
         setSkills(res.records)
       } catch (error) {
         console.log(error)
@@ -16,7 +16,6 @@ export const Skills = () => {
     })()
   }, [])
 
-  console.log(skills)
   return (
     <div className="skills__content py-5">
       {skills.map((skill, index) => {

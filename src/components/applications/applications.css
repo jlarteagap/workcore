@@ -24,6 +24,10 @@
     max-width: 300px;
     grid-column-end: span 4;
 }
+.app__services-img{
+    border: 1px solid var(--bgDark);
+    border-radius: .5rem;
+}
 .app__services-icon{
     object-fit: contain;
     width: 56px;
