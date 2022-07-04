@@ -4,6 +4,9 @@
 .about__body{
     margin: 4rem 0;
 }
+.about__img{
+    /* animation: fadeInLeft 1s forwards; */
+}
 .about__img-cover{
     height: 400px;
     object-fit: cover;

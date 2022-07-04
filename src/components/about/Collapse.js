@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { FaPlus, FaTimes } from 'react-icons/fa'
 
 export const Collapse = ({ title, collapsed, children }) => {
-  console.log(collapsed)
   const [isCollapsed, setIsCollapsed] = useState(collapsed)
 
   return (
