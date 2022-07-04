@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { getData } from '../../api/Api'
 
+import useOnScreen from '../../hooks/useObserver'
 export const Bussines = () => {
+  const elementRef = useRef(null)
+  const isOnScreen = useOnScreen(elementRef)
   const [business, setBusiness] = useState([])
 
   useEffect(() => {
@@ -16,7 +19,7 @@ export const Bussines = () => {
   }, [])
 
   return (
-    <div className="modelo__icons modelo__padding">
+    <div className="modelo__icons modelo__padding" ref={elementRef}>
       {business.map((item, index) => {
         return (
           <div
@@ -24,12 +27,19 @@ export const Bussines = () => {
             key={index}
           >
             <img
-              className="modelo__icons-img"
+              className={`modelo__icons-img ${
+                isOnScreen && 'animate__animated animate__fadeIn'
+              }`}
               src={item.IMAGENES[0].URL}
               alt={item.TITULO}
               loading="lazy"
             />
-            <p className="modelo__icons-item-text has-text-weight-bold mt-5">
+            <p
+              className={`modelo__icons-item-text has-text-weight-bold mt-5 ${
+                isOnScreen &&
+                'animate__animated animate__fadeInUp animate__delay-1s'
+              }`}
+            >
               {item.TITULO}
             </p>
           </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import './about.css'
 
 import about from '../../assets/about.jpg'
@@ -6,20 +6,12 @@ import { Modelo } from './Modelo'
 import { Titles } from '../utils/Titles'
 import { Accordion } from './Accordion'
 
+import useOnScreen from '../../hooks/useObserver'
+
 export default function About() {
-  const aboutImgRef = useRef(null)
-  const [entryObserver, setEntryObserver] = useState(null)
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      const entry = entries[0]
-      if (entry.isIntersecting) {
-        setEntryObserver(true)
-      }
-    })
-
-    observer.observe(aboutImgRef.current)
-  }, [])
-
+  const elementRef = useRef(null)
+  const isOnScreen = useOnScreen(elementRef)
+  console.log({ isOnScreen })
   return (
     <section className="about">
       <div className="container">
@@ -27,10 +19,10 @@ export default function About() {
         <div className="about__body">
           <div className="columns">
             <div
-              className={`about__img ${
-                entryObserver && 'animate__animated animate__fadeInLeft'
+              className={`column about__img ${
+                isOnScreen && 'animate__animated animate__fadeInLeft'
               }`}
-              ref={aboutImgRef}
+              ref={elementRef}
             >
               <img
                 className="about__img-cover"

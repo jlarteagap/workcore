@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Collapse } from './Collapse'
 import { getData } from '../../api/Api'
+import useOnScreen from '../../hooks/useObserver'
+
 export const Accordion = () => {
+  const elementRef = useRef(null)
+  const isOnScreen = useOnScreen(elementRef)
   const [about, setAbout] = useState([])
   useEffect(() => {
     ;(async () => {
@@ -15,7 +19,12 @@ export const Accordion = () => {
   }, [])
 
   return (
-    <div className="column">
+    <div
+      ref={elementRef}
+      className={`column ${
+        isOnScreen && 'animate__animated animate__fadeInRight'
+      }`}
+    >
       {about.map((item, index) => {
         return (
           <Collapse key={index} title={item.TITULO} collapsed>
