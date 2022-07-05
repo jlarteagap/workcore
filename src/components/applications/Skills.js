@@ -3,8 +3,11 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Tooltip } from './Tooltip'
 import { getData } from '../../api/Api'
 import useOnScreen from '../../hooks/useObserver'
+import useData from '../../hooks/useData'
 
 export const Skills = () => {
+  const { updateSections } = useData()
+
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
   const [skills, setSkills] = useState([])
@@ -18,6 +21,12 @@ export const Skills = () => {
       }
     })()
   }, [])
+
+  useEffect(() => {
+    if (skills.length > 0) {
+      updateSections('habilidades')
+    }
+  }, [skills])
 
   return (
     <div className="skills__content py-5" ref={elementRef} id="habilidades">

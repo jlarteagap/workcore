@@ -2,11 +2,13 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Collapse } from './Collapse'
 import { getData } from '../../api/Api'
 import useOnScreen from '../../hooks/useObserver'
+import useData from '../../hooks/useData'
 
 export const Accordion = () => {
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
   const [about, setAbout] = useState([])
+  const { updateSections } = useData()
   useEffect(() => {
     ;(async () => {
       try {
@@ -18,6 +20,11 @@ export const Accordion = () => {
     })()
   }, [])
 
+  useEffect(() => {
+    if (about.length > 0) {
+      updateSections('workcore')
+    }
+  })
   return (
     <div
       ref={elementRef}

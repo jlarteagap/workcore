@@ -5,14 +5,16 @@ import { Services } from './Services'
 import { Skills } from './Skills'
 import { Mac } from './Mac'
 import useOnScreen from '../../hooks/useObserver'
-
+import useData from '../../hooks/useData'
 export default function Application() {
+  const { sections } = useData()
   const elementRef = useRef(null)
-
   const isOnScreen = useOnScreen(elementRef)
+
   return (
     <section className="applications" id="aplicaciones">
       <Mac />
+
       <div className="container">
         <Titles title="Aplicaciones" />
         <Services />
@@ -20,7 +22,11 @@ export default function Application() {
       {/* Skills */}
 
       <div className="skills" ref={elementRef}>
-        <div className="skills__header is-flex is-align-items-center is-flex-direction-column has-text-centered">
+        <div
+          className={`skills__header is-flex is-align-items-center is-flex-direction-column has-text-centered ${
+            sections.habilidades || 'is-hidden'
+          }`}
+        >
           <div
             className={`skills__header-title has-text-weight-light is-size-2 is-size-5-mobile ${
               isOnScreen &&

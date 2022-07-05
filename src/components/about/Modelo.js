@@ -1,9 +1,11 @@
 import React, { useRef } from 'react'
 import useOnScreen from '../../hooks/useObserver'
 import { Bussines } from './Bussines'
+
 export const Modelo = () => {
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
+
   return (
     <div className="modelo" ref={elementRef}>
       <div className="modelo__header is-flex is-justify-content-center is-flex-direction-column has-text-centered">
@@ -24,7 +26,6 @@ export const Modelo = () => {
         </span>
       </div>
       <Bussines />
-
       <div
         className={`modelo__padding is-size-4 is-size-6-mobile mb-5 has-text-centered has-text-weight-light ${
           isOnScreen && 'animate__animated animate__fadeInUp animate__delay-1s'

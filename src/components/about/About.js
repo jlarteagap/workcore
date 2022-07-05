@@ -6,15 +6,16 @@ import { Modelo } from './Modelo'
 import { Titles } from '../utils/Titles'
 import { Accordion } from './Accordion'
 
+import useData from '../../hooks/useData'
 import useOnScreen from '../../hooks/useObserver'
 
 export default function About() {
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
-
+  const { sections } = useData()
   return (
-    <section className="about" id="workcore">
-      <div className="container">
+    <section className="about" id="workcore" ref={elementRef}>
+      <div className={`container ${sections.workcore || 'is-hidden'}`}>
         <Titles title="Acerca de Workcore" />
         <div className="about__body">
           <div className="columns">
@@ -22,7 +23,6 @@ export default function About() {
               className={`column about__img ${
                 isOnScreen && 'animate__animated animate__fadeInLeft'
               }`}
-              ref={elementRef}
             >
               <img
                 className="about__img-cover"

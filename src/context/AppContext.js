@@ -8,7 +8,20 @@ export const AppContext = createContext({
 
 export function AppProvider({ children }) {
   const [empresa, setEmpresa] = useState([])
+  const [sections, setSections] = useState({
+    aplicaciones: false,
+    habilidades: false,
+    workcore: false,
+    datos: true
+  })
 
+  const updateSections = section => {
+    console.log(section)
+    setSections({
+      ...sections,
+      [section]: true
+    })
+  }
   useEffect(() => {
     const url = `${API_HOST}/empresa/?a=${A}&e=${E}&ub=${UB}`
 
@@ -20,7 +33,9 @@ export function AppProvider({ children }) {
   }, [])
 
   const value = {
-    empresa
+    empresa,
+    updateSections,
+    sections
   }
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>

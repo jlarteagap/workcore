@@ -2,11 +2,15 @@ import React, { useEffect, useRef } from 'react'
 import { getData } from '../../api/Api'
 import './applications.css'
 import useOnScreen from '../../hooks/useObserver'
+import useData from '../../hooks/useData'
 
 export const Services = () => {
+  const { updateSections, sections } = useData()
+
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
   const [services, setServices] = React.useState([])
+
   useEffect(() => {
     ;(async () => {
       try {
@@ -18,6 +22,12 @@ export const Services = () => {
     })()
   }, [])
 
+  useEffect(() => {
+    if (services.length > 0) {
+      updateSections('aplicaciones')
+    }
+  }, [services])
+
   return (
     <div className="app__services" ref={elementRef}>
       {services.map((service, index) => {
@@ -25,7 +35,8 @@ export const Services = () => {
           <div
             className={`app__services-item has-text-centered app__services-item-${index} ${
               isOnScreen && 'animate__animated animate__fadeInUp'
-            }`}
+            }
+            ${sections.aplicaciones || 'is-hidden'}`}
             key={index}
           >
             <div className="mb-3 is-flex is-justify-content-center">
