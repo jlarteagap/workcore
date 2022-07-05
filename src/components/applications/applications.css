@@ -188,5 +188,12 @@
     .mac__imag-spacer{
         height: 1px;
     }
+    .skills-items{
+    height: auto;
+    box-sizing: border-box;
+    }
+    .skills-items:not(:last-child)::after{
+        display: none;
+    }
+}
 
-} 
