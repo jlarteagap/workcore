@@ -11,7 +11,7 @@ import useOnScreen from '../../hooks/useObserver'
 export default function About() {
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
-  console.log({ isOnScreen })
+
   return (
     <section className="about">
       <div className="container">

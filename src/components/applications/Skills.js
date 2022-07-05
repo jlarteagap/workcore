@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 
 import { Tooltip } from './Tooltip'
 import { getData } from '../../api/Api'
+import useOnScreen from '../../hooks/useObserver'
 
 export const Skills = () => {
+  const elementRef = useRef(null)
+  const isOnScreen = useOnScreen(elementRef)
   const [skills, setSkills] = useState([])
   useEffect(() => {
     ;(async () => {
@@ -17,7 +20,7 @@ export const Skills = () => {
   }, [])
 
   return (
-    <div className="skills__content py-5">
+    <div className="skills__content py-5" ref={elementRef}>
       {skills.map((skill, index) => {
         return (
           <div
@@ -25,7 +28,9 @@ export const Skills = () => {
               skill.CATEGORIA === 'NUESTRAS HABILIDADES'
                 ? 'skills-items is-flex is-flex-direction-column is-justify-content-center is-align-items-center p-5'
                 : 'is-hidden'
-            }`}
+            } ${
+              isOnScreen && 'animate__animated animate__fadeInLeft'
+            } skill-item-${index}`}
             key={index}
           >
             {skill.CATEGORIA === 'NUESTRAS HABILIDADES' ? (

@@ -137,6 +137,26 @@
 .mac__img_title{
     max-width: 500px;
 }
+
+.app__services-item-1, .app__services-item-5, .app__services-item-9{
+    animation-delay: .3s;
+}
+.app__services-item-2, .app__services-item-6, .app__services-item-10{
+    animation-delay: .6s;
+}
+.app__services-item-3, .app__services-item-7, .app__services-item-11{
+    animation-delay: .9s;
+}
+
+.skill-item-1{
+    animation-delay: .3s;
+}
+.skill-item-2{
+    animation-delay: .6s;
+}
+.skill-item-3{
+    animation-delay: .9s;
+}
 @media screen and (max-width: 480px) {
     .app__services{
         grid-template-columns: repeat(2, 1fr);
@@ -156,6 +176,7 @@
     .app__services-item:last-child{
         grid-column-end: span 2;
     }
+
     .mac__imag_top{
         position: static;
         display: block;
@@ -167,4 +188,5 @@
     .mac__imag-spacer{
         height: 1px;
     }
+
 } 

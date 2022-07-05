@@ -1,35 +1,40 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Titles } from '../utils/Titles'
 import './applications.css'
 import { Services } from './Services'
 import { Skills } from './Skills'
-import laptop from '../../assets/mac.png'
+import { Mac } from './Mac'
+import useOnScreen from '../../hooks/useObserver'
+
 export default function Application() {
+  const elementRef = useRef(null)
+
+  const isOnScreen = useOnScreen(elementRef)
   return (
     <section className="applications">
-      <div className="mac__imag">
-        <div className="mac__imag_top">
-          <img src={laptop} alt="laptop" />
-        </div>
-        <span className="mac__imag-spacer"></span>
-        <div className="mac__img_title is-flex is-justify-content-center is-align-items-center has-text-centered m-auto pb-5">
-          <h4 className="is-size-4 is-size-5-mobile">
-            sistema de planificación de recursos empresariales
-          </h4>
-        </div>
-      </div>
+      <Mac />
       <div className="container">
         <Titles title="Aplicaciones" />
         <Services />
       </div>
       {/* Skills */}
 
-      <div className="skills">
+      <div className="skills" ref={elementRef}>
         <div className="skills__header is-flex is-align-items-center is-flex-direction-column has-text-centered">
-          <div className="skills__header-title has-text-weight-light is-size-2 is-size-5-mobile">
+          <div
+            className={`skills__header-title has-text-weight-light is-size-2 is-size-5-mobile ${
+              isOnScreen &&
+              'animate__animated animate__fadeInDown aniamte__delay-1s'
+            }`}
+          >
             NUESTRAS HABILIDADES
           </div>
-          <span className="skills__header-desc">
+          <span
+            className={`skills__header-desc ${
+              isOnScreen &&
+              'animate__animated animate__fadeInUp aniamte__delay-1s'
+            }`}
+          >
             Contamos con experiencia y destreza en tecnologías
           </span>
           <Skills />

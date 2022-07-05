@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { getData } from '../../api/Api'
 import './applications.css'
+import useOnScreen from '../../hooks/useObserver'
 
 export const Services = () => {
+  const elementRef = useRef(null)
+  const isOnScreen = useOnScreen(elementRef)
   const [services, setServices] = React.useState([])
   useEffect(() => {
     ;(async () => {
@@ -16,10 +19,15 @@ export const Services = () => {
   }, [])
 
   return (
-    <div className="app__services">
+    <div className="app__services" ref={elementRef}>
       {services.map((service, index) => {
         return (
-          <div className="app__services-item has-text-centered" key={index}>
+          <div
+            className={`app__services-item has-text-centered app__services-item-${index} ${
+              isOnScreen && 'animate__animated animate__fadeInUp'
+            }`}
+            key={index}
+          >
             <div className="mb-3 is-flex is-justify-content-center">
               <div className="app__services-img p-3">
                 <img
