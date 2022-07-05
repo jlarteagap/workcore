@@ -11,7 +11,7 @@ export default function Application() {
 
   const isOnScreen = useOnScreen(elementRef)
   return (
-    <section className="applications">
+    <section className="applications" id="aplicaciones">
       <Mac />
       <div className="container">
         <Titles title="Aplicaciones" />

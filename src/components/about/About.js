@@ -13,7 +13,7 @@ export default function About() {
   const isOnScreen = useOnScreen(elementRef)
 
   return (
-    <section className="about">
+    <section className="about" id="workcore">
       <div className="container">
         <Titles title="Acerca de Workcore" />
         <div className="about__body">

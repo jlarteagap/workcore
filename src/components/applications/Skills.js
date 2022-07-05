@@ -20,7 +20,7 @@ export const Skills = () => {
   }, [])
 
   return (
-    <div className="skills__content py-5" ref={elementRef}>
+    <div className="skills__content py-5" ref={elementRef} id="habilidades">
       {skills.map((skill, index) => {
         return (
           <div

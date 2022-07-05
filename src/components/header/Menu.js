@@ -7,28 +7,45 @@ export const Menu = ({ onClick, open }) => {
         <a
           className="header__menu-item navbar-item has-text-weight-bold "
           onClick={onClick}
+          href="#inicio"
         >
-          Home
+          Inicio
         </a>
-
         <a
           className="header__menu-item navbar-item has-text-weight-bold"
           onClick={onClick}
+          href="#aplicaciones"
         >
-          Características
+          Aplicaciones
         </a>
         <a
           className="header__menu-item navbar-item has-text-weight-bold "
           onClick={onClick}
+          href="#habilidades"
         >
-          Módulos
+          Habilidades
         </a>
 
         <a
           className="header__menu-item navbar-item has-text-weight-bold "
           onClick={onClick}
+          href="#workcore"
         >
-          Contacto
+          Sobre Workcore
+        </a>
+        <a
+          className="header__menu-item navbar-item has-text-weight-bold "
+          onClick={onClick}
+          href="#datos"
+        >
+          Datos curiosos
+        </a>
+        <a
+          className="header__menu-item navbar-item has-text-weight-bold "
+          onClick={onClick}
+          href="#contacto"
+        >
+          Contactanos
         </a>
       </div>
     </div>

@@ -16,6 +16,7 @@ export const OtherData = () => {
   const isOnScreen = useOnScreen(elementRef)
   return (
     <div
+      id="datos"
       className="other__data has-text-light is-flex is-justify-content-space-between"
       ref={elementRef}
     >
