@@ -23,6 +23,7 @@ export default function Application() {
 
       <div className="skills" ref={elementRef}>
         <div
+          id="habilidades"
           className={`skills__header is-flex is-align-items-center is-flex-direction-column has-text-centered ${
             sections.habilidades || 'is-hidden'
           }`}

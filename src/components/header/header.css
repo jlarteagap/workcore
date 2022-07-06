@@ -16,7 +16,9 @@
     opacity: 0;
     transition: all .3s;
 }
-
+.active{
+    color: var(--primary) !important;
+}
 .header__menu-item:hover:before{
     width: 80%;
     opacity: 1;

@@ -12,31 +12,33 @@ export default function Header() {
     <div className="header">
       <div className="container">
         <nav
-          className="container navbar is-fixed-top"
+          className="navbar is-fixed-top"
           role="navigation"
           aria-label="main navigation"
         >
-          <div className="navbar-brand">
-            <a
-              className="header__logo navbar-item animate__animated animate__fadeInLeft"
-              href={empresa.url}
-            >
-              <img src={empresa.logo} width="150" alt={empresa.nombre} />
-            </a>
-            <BugerMenu
+          <div className="container">
+            <div className="navbar-brand">
+              <a
+                className="header__logo navbar-item animate__animated animate__fadeInLeft"
+                href={empresa.url}
+              >
+                <img src={empresa.logo} width="150" alt={empresa.nombre} />
+              </a>
+              <BugerMenu
+                open={open}
+                onClick={() => {
+                  setOpen(!open)
+                }}
+              />
+            </div>
+
+            <Menu
               open={open}
               onClick={() => {
                 setOpen(!open)
               }}
             />
           </div>
-
-          <Menu
-            open={open}
-            onClick={() => {
-              setOpen(!open)
-            }}
-          />
         </nav>
       </div>
     </div>

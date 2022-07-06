@@ -1,63 +1,96 @@
 import React from 'react'
 import useData from '../../hooks/useData'
-
+import { Link } from 'react-scroll'
 export const Menu = ({ onClick, open }) => {
   const { sections } = useData()
 
   return (
     <div className={`header__menu navbar-menu ${open ? 'is-active' : ''}`}>
       <div className="navbar-end">
-        <a
+        <Link
+          activeClass="active"
           className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown"
           onClick={onClick}
-          href="#inicio"
+          spy={true}
+          smooth={true}
+          duration={500}
+          to="inicio"
+          isDynamic={true}
         >
           Inicio
-        </a>
+        </Link>
         {sections.aplicaciones && (
-          <a
+          <Link
             className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
-            href="#aplicaciones"
+            to="aplicaciones"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            isDynamic={true}
           >
             Aplicaciones
-          </a>
+          </Link>
         )}
         {sections.habilidades && (
-          <a
+          <Link
             className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
-            href="#habilidades"
+            to="habilidades"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            isDynamic={true}
+            offset={-80}
           >
             Habilidades
-          </a>
+          </Link>
         )}
 
         {sections.workcore && (
-          <a
+          <Link
             className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
-            href="#workcore"
+            to="workcore"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            isDynamic={true}
           >
             Sobre Workcore
-          </a>
+          </Link>
         )}
         {sections.datos && (
-          <a
+          <Link
             className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
-            href="#datos"
+            to="datos"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            isDynamic={true}
+            offset={-130}
           >
             Datos curiosos
-          </a>
+          </Link>
         )}
-        <a
+        <Link
           className="header__menu-item navbar-item  has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
           onClick={onClick}
-          href="#contacto"
+          to="contacto"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+          isDynamic={true}
+          offset={-50}
         >
           Contactanos
-        </a>
+        </Link>
       </div>
     </div>
   )

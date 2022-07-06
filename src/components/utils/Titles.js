@@ -6,7 +6,7 @@ export const Titles = ({ title, description, white }) => {
   return (
     <div className="is-flex is-justify-content-center">
       <div
-        className="about__header is-flex is-justify-content-center has-text-centered is-flex-direction-column"
+        className="about__header is-flex is-justify-content-center has-text-centered is-flex-direction-column pt-5"
         ref={elementRef}
       >
         <h2
