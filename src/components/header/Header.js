@@ -11,7 +11,11 @@ export default function Header() {
   return (
     <div className="header">
       <div className="container">
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav
+          className="container navbar is-fixed-top"
+          role="navigation"
+          aria-label="main navigation"
+        >
           <div className="navbar-brand">
             <a
               className="header__logo navbar-item animate__animated animate__fadeInLeft"
