@@ -16,7 +16,6 @@ export function AppProvider({ children }) {
   })
 
   const updateSections = section => {
-    console.log(section)
     setSections({
       ...sections,
       [section]: true

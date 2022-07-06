@@ -24,7 +24,7 @@ export const Accordion = () => {
     if (about.length > 0) {
       updateSections('workcore')
     }
-  })
+  }, [about])
   return (
     <div
       ref={elementRef}
