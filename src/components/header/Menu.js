@@ -8,7 +8,7 @@ export const Menu = ({ onClick, open }) => {
     <div className={`header__menu navbar-menu ${open ? 'is-active' : ''}`}>
       <div className="navbar-end">
         <a
-          className="header__menu-item navbar-item  has-text-weight-light"
+          className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown"
           onClick={onClick}
           href="#inicio"
         >
@@ -16,7 +16,7 @@ export const Menu = ({ onClick, open }) => {
         </a>
         {sections.aplicaciones && (
           <a
-            className="header__menu-item navbar-item  has-text-weight-light"
+            className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
             href="#aplicaciones"
           >
@@ -25,7 +25,7 @@ export const Menu = ({ onClick, open }) => {
         )}
         {sections.habilidades && (
           <a
-            className="header__menu-item navbar-item  has-text-weight-light"
+            className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
             href="#habilidades"
           >
@@ -35,7 +35,7 @@ export const Menu = ({ onClick, open }) => {
 
         {sections.workcore && (
           <a
-            className="header__menu-item navbar-item  has-text-weight-light"
+            className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
             href="#workcore"
           >
@@ -44,7 +44,7 @@ export const Menu = ({ onClick, open }) => {
         )}
         {sections.datos && (
           <a
-            className="header__menu-item navbar-item  has-text-weight-light"
+            className="header__menu-item navbar-item has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
             onClick={onClick}
             href="#datos"
           >
@@ -52,7 +52,7 @@ export const Menu = ({ onClick, open }) => {
           </a>
         )}
         <a
-          className="header__menu-item navbar-item  has-text-weight-light"
+          className="header__menu-item navbar-item  has-text-weight-light animate__animated animate__fadeInDown aniamte__delay-2s"
           onClick={onClick}
           href="#contacto"
         >

@@ -13,7 +13,10 @@ export default function Header() {
       <div className="container">
         <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
-            <a className="header__logo navbar-item" href={empresa.url}>
+            <a
+              className="header__logo navbar-item animate__animated animate__fadeInLeft"
+              href={empresa.url}
+            >
               <img src={empresa.logo} width="150" alt={empresa.nombre} />
             </a>
             <BugerMenu

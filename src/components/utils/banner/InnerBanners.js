@@ -123,7 +123,7 @@ export const QuoteData = () => {
             isOnScreen && 'animate__animated animate__fadeInRight'
           }`}
         >
-          <img src={workcore} alt="Workcore" />
+          <img src={workcore} alt="Workcore" width="200px" />
         </div>
       </div>
     </>
