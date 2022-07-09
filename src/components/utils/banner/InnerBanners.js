@@ -17,7 +17,7 @@ export const OtherData = () => {
   return (
     <div
       id="datos"
-      className="other__data has-text-light is-flex is-justify-content-space-between"
+      className="other__data has-text-light is-flex is-justify-content-space-around"
       ref={elementRef}
     >
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">

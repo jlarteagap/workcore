@@ -160,7 +160,27 @@
 .skill-item-3{
     animation-delay: .9s;
 }
+@media screen and (max-width: 1024px){
+    .skills__content{
+        gap: 2rem;
+    }
+    .skills-items{
+        width: 150px;
+        height: 150px;
+    }
+    .skills-items:not(:last-child)::after{
+        top: calc(50% - 15px);
+        left: 100%;
+        width: 30px;
+        height: 30px;
+        font-size: 2rem;
+    
+    }
+}
 @media screen and (max-width: 480px) {
+    .applications{
+        padding: 0 1rem 5rem 1rem;
+    }
     .app__services{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 1rem;
@@ -181,11 +201,12 @@
     }
 
     .mac__imag_top{
-        position: static;
-        display: block;
-        margin-left: 0;
+        top: -50px;
+        margin-left: 0%;
+        left: 0;
     }
     .mac__imag_top img{
+        max-width: 350px;
         width: 100%;
     }
     .mac__imag-spacer{
