@@ -11,6 +11,8 @@ export const Skills = () => {
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
   const [skills, setSkills] = useState([])
+  const [isOpen, setIsOpen] = useState(false)
+
   useEffect(() => {
     ;(async () => {
       try {
@@ -41,10 +43,12 @@ export const Skills = () => {
               isOnScreen && 'animate__animated animate__fadeInLeft'
             } skill-item-${index}`}
             key={index}
+            onClick={() => setIsOpen(!isOpen)}
           >
-            {skill.CATEGORIA === 'NUESTRAS HABILIDADES' ? (
+            {skill.CATEGORIA === 'NUESTRAS HABILIDADES' && (
               <div>
                 <img
+                  className="skills-img"
                   src={skill.IMAGENES[0].URL}
                   alt={skill.TITULO}
                   loading="lazy"
@@ -52,14 +56,12 @@ export const Skills = () => {
                 <p className="p-0 m-0 has-text-centered mt-3 has-text-weight-bold">
                   {skill.TITULO}
                 </p>
-                <Tooltip>
+                <Tooltip isOpen={isOpen}>
                   <div
                     dangerouslySetInnerHTML={{ __html: skill.CONTENIDO }}
                   ></div>
                 </Tooltip>
               </div>
-            ) : (
-              ''
             )}
           </div>
         )

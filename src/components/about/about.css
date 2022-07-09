@@ -38,6 +38,9 @@
     height: 64px;
     object-fit: contain;
   }
+  .modelo__icons-img:hover{
+    filter: invert(58%) sepia(66%) saturate(6660%) hue-rotate(340deg) brightness(106%) contrast(99%);
+  }
 .modelo__icons-items:last-child(){
     grid-column-end: span 2;
     background-color: red;

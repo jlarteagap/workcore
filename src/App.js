@@ -30,7 +30,7 @@ function App() {
           title="Algunos datos curiosos"
           white
           bg={data}
-          overlay="#0c3e88"
+          overlay="#505050"
         >
           <OtherData />
         </Banner>

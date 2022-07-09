@@ -83,6 +83,9 @@
 .skills__header-title{
     letter-spacing: .25rem;
 }
+.skills-items:hover .skills-img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
 .skills-tooltip{
     background: #2b393d;
     color: white;
@@ -91,7 +94,7 @@
     width: 100%;
     left: calc(50% - 100px);
     border-radius: .5rem;
-    visibility: hidden;
+    /* visibility: hidden; */
     transition: all .3s;
     text-transform: lowercase;
 }
@@ -109,9 +112,9 @@
 	margin-top: -10px;
     z-index: 4;
 }
-.skills-items:hover .skills-tooltip{
+/* .skills-items:hover .skills-tooltip{
     visibility: visible;
-}
+} */
 .skills-items:hover{
     background-color: var(--primary);
     color: #f3f3f3;
