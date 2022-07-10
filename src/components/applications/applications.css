@@ -9,12 +9,7 @@
     gap: 3rem 3rem;
 }
 .app__services-item{
-    border-bottom: 1px solid rgb(186, 186, 186);
-    padding-bottom: 3rem;
-    transition: all .3s;
-}
-.app__services-item:hover{
-    border-bottom: 1px solid var(--primary);
+    cursor: pointer;
 }
 
 .app__services-item:last-child{
@@ -88,7 +83,6 @@
 }
 .skills-tooltip{
     width: 200px;
-    text-transform: lowercase;
 }
 
 .skills-items:hover{
