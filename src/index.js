@@ -4,6 +4,7 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import 'bulma/css/bulma.css'
 import './style.css'
+import 'tippy.js/dist/tippy.css' // optional
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(

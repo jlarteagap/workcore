@@ -87,34 +87,10 @@
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 .skills-tooltip{
-    background: #2b393d;
-    color: white;
-    position: absolute;
-    top: calc(100% + 1rem);
-    width: 100%;
-    left: calc(50% - 100px);
-    border-radius: .5rem;
-    /* visibility: hidden; */
-    transition: all .3s;
+    width: 200px;
     text-transform: lowercase;
 }
-.skills-tooltip:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 10px solid transparent;
-	border-bottom-color: #2b393d;
-	border-top: 0;
-	margin-left: -10px;
-	margin-top: -10px;
-    z-index: 4;
-}
-/* .skills-items:hover .skills-tooltip{
-    visibility: visible;
-} */
+
 .skills-items:hover{
     background-color: var(--primary);
     color: #f3f3f3;
