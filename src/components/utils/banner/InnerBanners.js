@@ -14,6 +14,7 @@ const { CLIENTS, MODULES, IMPLEMENT } = window.CONFIG
 export const OtherData = () => {
   const elementRef = useRef(null)
   const isOnScreen = useOnScreen(elementRef)
+
   return (
     <div
       id="datos"
@@ -37,8 +38,19 @@ export const OtherData = () => {
             }`}
           />
         </div>
-        <div className="data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile">
-          <CountUp delay={1} duration={3} end={MODULES} suffix="+" />
+        <div
+          className={`data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile ${
+            isOnScreen &&
+            'animate__animated animate__fadeInRight animated__delay-1s'
+          }`}
+        >
+          <CountUp
+            delay={1}
+            duration={3}
+            end={MODULES}
+            suffix="+"
+            enableScrollSpy
+          />
         </div>
       </div>
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -58,8 +70,20 @@ export const OtherData = () => {
             }`}
           />
         </div>
-        <div className="data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile">
-          <CountUp delay={1} duration={3} end={CLIENTS} suffix="+" />
+        <div
+          className={`data__body-item-num has-text-weight-bold is-size-3 is-size-5-mobile ${
+            isOnScreen &&
+            'animate__animated animate__fadeInRight animated__delay-1s'
+          }`}
+        >
+          <CountUp
+            delay={1}
+            duration={3}
+            end={CLIENTS}
+            suffix="+"
+            enableScrollSpy
+          />
+          <span id="counter" />
         </div>
       </div>
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -86,7 +110,13 @@ export const OtherData = () => {
             'animate__animated animate__fadeInRight animated__delay-1s'
           }`}
         >
-          <CountUp delay={1} duration={3} end={IMPLEMENT} suffix="+" />
+          <CountUp
+            delay={1}
+            duration={3}
+            end={IMPLEMENT}
+            suffix="+"
+            enableScrollSpy
+          />
         </div>
       </div>
     </div>

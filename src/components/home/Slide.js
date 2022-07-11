@@ -30,7 +30,10 @@ export const Slide = () => {
     <Splide options={options}>
       {slides.map((slide, index) => {
         return (
-          <SplideSlide key={index}>
+          <SplideSlide
+            key={index}
+            className="is-flex is-flex-direction-column is-align-items-center"
+          >
             <img src={slide.URL} alt={slide.ID_FOTO} loading="lazy" />
             <div className="is-flex is-justify-content-center">
               <div
