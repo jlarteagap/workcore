@@ -44,13 +44,15 @@ export const OtherData = () => {
             'animate__animated animate__fadeInRight animated__delay-1s'
           }`}
         >
-          <CountUp
-            delay={1}
-            duration={3}
-            end={MODULES}
-            suffix="+"
-            enableScrollSpy
-          />
+          {isOnScreen && (
+            <CountUp
+              delay={1}
+              duration={3}
+              end={MODULES}
+              suffix="+"
+              enableScrollSpy
+            />
+          )}
         </div>
       </div>
       <div className="data__body-item is-flex is-flex-direction-column is-align-items-center">
@@ -76,13 +78,15 @@ export const OtherData = () => {
             'animate__animated animate__fadeInRight animated__delay-1s'
           }`}
         >
-          <CountUp
-            delay={1}
-            duration={3}
-            end={CLIENTS}
-            suffix="+"
-            enableScrollSpy
-          />
+          {isOnScreen && (
+            <CountUp
+              delay={1}
+              duration={3}
+              end={CLIENTS}
+              suffix="+"
+              enableScrollSpy
+            />
+          )}
           <span id="counter" />
         </div>
       </div>
@@ -110,13 +114,15 @@ export const OtherData = () => {
             'animate__animated animate__fadeInRight animated__delay-1s'
           }`}
         >
-          <CountUp
-            delay={1}
-            duration={3}
-            end={IMPLEMENT}
-            suffix="+"
-            enableScrollSpy
-          />
+          {isOnScreen && (
+            <CountUp
+              delay={1}
+              duration={3}
+              end={IMPLEMENT}
+              suffix="+"
+              enableScrollSpy
+            />
+          )}
         </div>
       </div>
     </div>
