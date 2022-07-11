@@ -1,6 +1,7 @@
 import React from 'react'
 import useData from '../../hooks/useData'
 import { Link } from 'react-scroll'
+const { LOGIN } = window.CONFIG
 export const Menu = ({ onClick, open }) => {
   const { sections } = useData()
 
@@ -91,6 +92,18 @@ export const Menu = ({ onClick, open }) => {
         >
           Contactanos
         </Link>
+        <div className="navbar-item">
+          <div className="buttons">
+            <a
+              className="button is-light header__button is-small"
+              href={LOGIN}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ingresar
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )

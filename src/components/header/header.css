@@ -16,6 +16,10 @@
     opacity: 0;
     transition: all .3s;
 }
+.header__button{
+    background: var(--primary) !important;
+    color: white !important;
+}
 .active{
     color: var(--primary) !important;
 }

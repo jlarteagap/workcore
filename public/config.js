@@ -5,5 +5,6 @@ window.CONFIG = {
   UB: 'https://workcore.net/',
   MODULES: '387',
   CLIENTS: '50',
-  IMPLEMENT: '50'
+  IMPLEMENT: '50',
+  LOGIN: 'https://sistema.workcore.net'
 }
