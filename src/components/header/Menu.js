@@ -30,6 +30,7 @@ export const Menu = ({ onClick, open }) => {
             smooth={true}
             duration={500}
             isDynamic={true}
+            offset={-100}
           >
             Aplicaciones
           </Link>

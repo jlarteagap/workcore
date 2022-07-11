@@ -6,9 +6,7 @@ function useOnScreen(ref) {
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsOnScreen(true)
-      }
+      setIsOnScreen(entry.isIntersecting)
     })
   }, [])
 

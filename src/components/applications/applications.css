@@ -36,7 +36,9 @@
     text-transform: uppercase;
 }
 
-
+.skills{
+    padding-top: 5rem;
+}
 .skills__content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

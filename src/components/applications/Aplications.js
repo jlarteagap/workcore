@@ -12,18 +12,17 @@ export default function Application() {
   const isOnScreen = useOnScreen(elementRef)
 
   return (
-    <section className="applications" id="aplicaciones">
+    <section className="applications">
       <Mac />
 
-      <div className="container">
+      <div className="container" id="aplicaciones">
         <Titles title="Aplicaciones" />
         <Services />
       </div>
       {/* Skills */}
 
-      <div className="skills" ref={elementRef}>
+      <div className="skills" ref={elementRef} id="habilidades">
         <div
-          id="habilidades"
           className={`skills__header is-flex is-align-items-center is-flex-direction-column has-text-centered ${
             sections.habilidades || 'is-hidden'
           }`}
