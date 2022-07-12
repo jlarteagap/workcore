@@ -10,7 +10,7 @@ import { AppProvider } from './context/AppContext'
 
 import data from './assets/data.jpg'
 import quote from './assets/process.jpg'
-import adapt from './assets/adapt.png'
+import adapt from './assets/adapt.jpg'
 
 function App() {
   return (
