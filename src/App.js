@@ -8,7 +8,7 @@ import {
 import { Banner } from './components/utils/Banner'
 import { AppProvider } from './context/AppContext'
 
-import data from './assets/data.png'
+import data from './assets/data.jpg'
 import quote from './assets/process.jpg'
 import adapt from './assets/adapt.png'
 
