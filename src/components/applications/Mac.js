@@ -17,16 +17,6 @@ export const Mac = () => {
         <img src={laptop} alt="laptop" />
       </div>
       <span className="mac__imag-spacer"></span>
-      <div className="mac__img_title is-flex is-justify-content-center is-align-items-center has-text-centered m-auto pb-5">
-        <h4
-          className={`is-size-4 is-size-5-mobile  ${
-            isOnScreen &&
-            'animate__animated animate__fadeInDown aniamte__delay-1s'
-          }`}
-        >
-          sistema de planificación de recursos empresariales
-        </h4>
-      </div>
     </div>
   )
 }

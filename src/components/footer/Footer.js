@@ -4,6 +4,7 @@ import workcore from '../../assets/workcore__blanco.png'
 import { HiChevronDoubleUp } from 'react-icons/hi'
 import { Social } from '../utils/SocialIcons'
 import useData from '../../hooks/useData'
+import { Link } from 'react-scroll'
 
 export default function Footer() {
   const { empresa } = useData()
@@ -12,9 +13,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center p-5">
-        <div className="pb-5">
+        <Link className="pb-5" to="home">
           <HiChevronDoubleUp size={36} className="upButtons" />
-        </div>
+        </Link>
         <div className="footer__brand is-flex is-align-items-center">
           <div className="footer__brand-logo py-4 pr-4 is-flex">
             <img src={workcore} alt={empresa.nombre} />

@@ -179,7 +179,8 @@ export const QuoteAdapt = () => {
         &quot;
         <span className="has-text-weight-bold">
           Nos adaptamos a tu empresa,
-        </span>{' '}
+        </span>
+        <br />
         no tu empresa a nosotros &quot;
       </div>
     </div>
